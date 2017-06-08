@@ -1,24 +1,23 @@
 'use strict';
 
-var React = require('react-native');
-var {
+import React, { Component, PropTypes } from 'react';
+
+import {
     View,
     TouchableOpacity,
     StyleSheet,
-    PropTypes,
     ActivityIndicator,
     ProgressBarAndroid,
-    TouchableNativeFeedback,
     Platform,
-    Component
-    } = React;
+    TouchableNativeFeedback,
+    } from 'react-native';
 
 const IS_ANDROID = Platform.OS === 'android';
 
 class Button extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {}
     }
 
